@@ -17,7 +17,9 @@ MCERF is a modular multimodal retrieval and reasoning framework designed for que
 The framework integrates two main components:
 
 1. **Multimodal Information Retriever Module (ColPali)**: Processes PDF pages as visual inputs, creating patch-level embeddings that preserve both textual semantics and visual structure
-2. **Reasoning Module (GPT-5-mini)**: Generates answers grounded in retrieved multimodal context
+<img width="4505" height="1841" alt="Figure_2" src="https://github.com/user-attachments/assets/f820e9ab-c4e0-409c-903b-3a607c5249e8" />
+
+3. **Reasoning Module (GPT-5-mini)**: Generates answers grounded in retrieved multimodal context
 
 Unlike traditional text-only RAG systems, MCERF's ColPali-based retrieval captures critical visual information such as stress-strain graphs, dimensioned drawings, and bill-of-materials tables.
 
@@ -50,6 +52,7 @@ Comprehensive comparison of MLLM models across six MCERF variants
 ### GPT-5-MCERF-Main (Base Framework)
 
 The core architecture combining ColPali multimodal retrieval with GPT-5-mini reasoning. ColPali treats each PDF page as a visual input, breaking it into patches that maintain both textual and visual semantics. Uses MaxSim scoring for query-document similarity matching.
+<img width="1541" height="368" alt="Figure_1" src="https://github.com/user-attachments/assets/12840169-edec-43e9-b9ff-3994c2ae6f1e" />
 
 **Best for:** General multimodal question answering
 
@@ -64,7 +67,7 @@ python GPT-5-MCERF-Main.py
 
 Combines multimodal semantic search with keyword-based BM25 retrieval. A keyword extractor (GPT-5-Nano) identifies critical technical terms from the query, which are then used for precise lexical matching alongside ColPali's semantic retrieval.
 
-[Figure_3.pdf](https://github.com/user-attachments/files/24928800/Figure_3.pdf)
+<img width="1839" height="818" alt="Figure_3" src="https://github.com/user-attachments/assets/4717be26-d187-420d-bdca-e6d50edce0b0" />
 Hybrid Retrieval Architecture
 
 **Best for:** Rule extraction tasks requiring specific term matching (achieves **0.95 F1** on Retrieval)
