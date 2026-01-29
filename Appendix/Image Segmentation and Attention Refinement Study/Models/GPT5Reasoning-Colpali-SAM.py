@@ -10,7 +10,7 @@ os.environ["TQDM_DISABLE"] = "1"
 os.environ["CUDA_DEVICE_ORDER"]    = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
-# Now import the libraries
+
 import vision_rag_gpt5_SAM
 reload(vision_rag_gpt5_SAM)
 from vision_rag_gpt5_SAM import VisionRAG
@@ -56,12 +56,13 @@ SUBTASK_CONFIGS = {
 
 # ROI crops base directories (per subtask). Each image <stem> should have a folder of crops at <base>/<stem>/
 ROI_BASE_DIRS = {
-    "rule_dimension_qa": "/home/knk22002/Downloads/DesignQA_CEaD-main/Reasoning_SAM/sam_results_dataset/rule_compliance/rule_dimension_qa/detailed_context",
-    "rule_dimension_qa_detailed": "/home/knk22002/Downloads/DesignQA_CEaD-main/Reasoning_SAM/sam_results_dataset/rule_compliance/rule_dimension_qa/detailed_context",
-    "rule_functional_performance_qa": "/home/knk22002/Downloads/DesignQA_CEaD-main/Reasoning_SAM/sam_results_dataset/rule_compliance/rule_functional_performance_qa/images",
-    "rule_definition_qa": "/home/knk22002/Downloads/DesignQA_CEaD-main/Reasoning_SAM/sam_results_dataset/rule_comprehension/rule_definition_qa",
-    "rule_presence_qa": "/home/knk22002/Downloads/DesignQA_CEaD-main/Reasoning_SAM/sam_results_dataset/rule_comprehension/rule_presence_qa",
+    "rule_dimension_qa": "sam_results_dataset/rule_compliance/rule_dimension_qa/detailed_context",
+    "rule_dimension_qa_detailed": "sam_results_dataset/rule_compliance/rule_dimension_qa/detailed_context",
+    "rule_functional_performance_qa": "sam_results_dataset/rule_compliance/rule_functional_performance_qa/images",
+    "rule_definition_qa": "sam_results_dataset/rule_comprehension/rule_definition_qa",
+    "rule_presence_qa": "sam_results_dataset/rule_comprehension/rule_presence_qa",
 }
+
 
 # Configuration
 INDEX_NAME = "multimodal_index"

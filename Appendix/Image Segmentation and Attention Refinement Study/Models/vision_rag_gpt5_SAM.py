@@ -307,7 +307,7 @@ if __name__ == "__main__":
     # Example manual run
     rag = VisionRAG(model_name="vidore/colpali-v1.3", device="cuda")
     rag.build_index(
-        input_path="/home/mrv24001/Documents/MDocAgent/data/dataset/docs/FSAE_Rules_2024_V1.pdf",
+        input_path="dataset/docs/FSAE_Rules_2024_V1.pdf",
         index_name="multimodal_rag_colqwen2.5-v0.2",
         overwrite=True,
         store_collection=True,
