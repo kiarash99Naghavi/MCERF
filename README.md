@@ -25,8 +25,8 @@ Unlike traditional text-only RAG systems, MCERF's ColPali-based retrieval captur
 
 ## Results
 
-<!-- INSERT FIGURE: Comprehensive comparison of MLLM models across six MCERF variants -->
-![Comprehensive comparison of MLLM models across six MCERF variants](figures/comparison_figure.png)
+![Comprehensive comparison of MLLM models across six MCERF variants](<img width="2834" height="1831" alt="Figure_7" src="https://github.com/user-attachments/assets/8e2d0888-8b1c-4c05-806d-9e75fb94ecf3" />
+)
 
 *Figure: Comprehensive comparison of MLLM models across six MCERF variants on DesignQA benchmark. The proposed GPT-5-MCERF framework variants consistently outperform baseline RAG models across all tasks.*
 
@@ -62,8 +62,9 @@ python GPT-5-MCERF-Main.py
 
 Combines multimodal semantic search with keyword-based BM25 retrieval. A keyword extractor (GPT-5-Nano) identifies critical technical terms from the query, which are then used for precise lexical matching alongside ColPali's semantic retrieval.
 
-<!-- INSERT FIGURE: Hybrid Retrieval Architecture -->
-![Hybrid Retrieval Architecture](figures/hybrid_architecture.png)
+
+![Hybrid Retrieval Architecture]([Figure_3.pdf](https://github.com/user-attachments/files/24928710/Figure_3.pdf)
+)
 
 **Best for:** Rule extraction tasks requiring specific term matching (achieves **0.95 F1** on Retrieval)
 
@@ -78,8 +79,9 @@ python GPT-5-MCERF-Hybrid.py --csv_path <path_to_csv> --pdf_path <path_to_pdf>
 
 Executes **5 independent retrieval-reasoning passes** per question. A blind adjudicator LLM (seeing only the generated answers, not the original question) consolidates results via consensus ranking. This reduces hallucination and improves robustness.
 
-<!-- INSERT FIGURE: SelfConsistency Architecture -->
-![SelfConsistency Architecture](figures/selfconsistency_architecture.png)
+
+![SelfConsistency Architecture](<img width="1804" height="506" alt="Figure_4" src="https://github.com/user-attachments/assets/712cbf9b-fe29-41fd-9be4-795ef3d044ae" />
+)
 
 **Best for:** Compilation tasks requiring comprehensive rule aggregation (achieves **0.56 F1**)
 
@@ -113,8 +115,9 @@ Introduces a Vision-to-Text preprocessing module that converts complex visual in
 3. **Image Describer**: GPT-5-mini generates comprehensive textual descriptions
 4. **High-Reasoning**: Processes textual descriptions with retrieved context
 
-<!-- INSERT FIGURE: Vision2Text Architecture -->
-![Vision2Text Architecture](figures/vision2text_architecture.png)
+
+![Vision2Text Architecture](<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/9c1335a6-631a-41f1-8b16-3c7c51922fd1" />
+)
 
 **Best for:** Dimension (0.82 ACC), Functional Performance (0.94 ACC) - tasks with tables, charts, and simulation results
 
@@ -399,4 +402,4 @@ This work was supported by the National Science Foundation (CMMI-2142290) and th
 
 ## License
 
-This project is for academic and research purposes.
+This project is under MIT License.
