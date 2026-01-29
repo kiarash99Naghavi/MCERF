@@ -402,8 +402,6 @@ If you use this work, please cite:
 
 This work was supported by the National Science Foundation (CMMI-2142290) and the Pratt & Whitney Institute for Advanced Systems Engineering Fellowship.
 
----
 
-## License
 
-This project is under MIT License.
+
