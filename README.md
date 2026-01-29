@@ -219,8 +219,7 @@ MCERF/
 
 1. **Clone and setup:**
 ```bash
-git clone <repository_url>
-cd MCERF
+git clone https://github.com/kiarash99Naghavi/MCERF && cd MCERF
 pip install -r requirements.txt
 ```
 
