@@ -23,13 +23,12 @@ Unlike traditional text-only RAG systems, MCERF's ColPali-based retrieval captur
 
 ---
 
-<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/4a589107-9798-4cf3-a3b0-57b64011a860" />
 
 
 ## Results
 
-![Comprehensive comparison of MLLM models across six MCERF variants](<img width="2834" height="1831" alt="Figure_7" src="https://github.com/user-attachments/assets/8e2d0888-8b1c-4c05-806d-9e75fb94ecf3" />
-)
+<img width="2834" height="1831" alt="Figure_7" src="https://github.com/user-attachments/assets/8e2d0888-8b1c-4c05-806d-9e75fb94ecf3" />
+Comprehensive comparison of MLLM models across six MCERF variants
 
 *Figure: Comprehensive comparison of MLLM models across six MCERF variants on DesignQA benchmark. The proposed GPT-5-MCERF framework variants consistently outperform baseline RAG models across all tasks.*
 
@@ -65,9 +64,8 @@ python GPT-5-MCERF-Main.py
 
 Combines multimodal semantic search with keyword-based BM25 retrieval. A keyword extractor (GPT-5-Nano) identifies critical technical terms from the query, which are then used for precise lexical matching alongside ColPali's semantic retrieval.
 
-
-![Hybrid Retrieval Architecture]([Figure_3.pdf](https://github.com/user-attachments/files/24928710/Figure_3.pdf)
-)
+[Figure_3.pdf](https://github.com/user-attachments/files/24928800/Figure_3.pdf)
+Hybrid Retrieval Architecture
 
 **Best for:** Rule extraction tasks requiring specific term matching (achieves **0.95 F1** on Retrieval)
 
@@ -83,8 +81,8 @@ python GPT-5-MCERF-Hybrid.py --csv_path <path_to_csv> --pdf_path <path_to_pdf>
 Executes **5 independent retrieval-reasoning passes** per question. A blind adjudicator LLM (seeing only the generated answers, not the original question) consolidates results via consensus ranking. This reduces hallucination and improves robustness.
 
 
-![SelfConsistency Architecture](<img width="1804" height="506" alt="Figure_4" src="https://github.com/user-attachments/assets/712cbf9b-fe29-41fd-9be4-795ef3d044ae" />
-)
+<img width="1804" height="506" alt="Figure_4" src="https://github.com/user-attachments/assets/0a19d153-d26f-46f1-8331-478809e86e2a" />
+SelfConsistency Architecture
 
 **Best for:** Compilation tasks requiring comprehensive rule aggregation (achieves **0.56 F1**)
 
@@ -118,9 +116,8 @@ Introduces a Vision-to-Text preprocessing module that converts complex visual in
 3. **Image Describer**: GPT-5-mini generates comprehensive textual descriptions
 4. **High-Reasoning**: Processes textual descriptions with retrieved context
 
-
-![Vision2Text Architecture](<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/9c1335a6-631a-41f1-8b16-3c7c51922fd1" />
-)
+<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/179d0106-616a-4ef4-ad40-6edd9ff24efe" />
+Vision2Text Architecture
 
 **Best for:** Dimension (0.82 ACC), Functional Performance (0.94 ACC) - tasks with tables, charts, and simulation results
 
@@ -143,6 +140,8 @@ Question-level routing using a multi-agent system with:
 - **Supervisor**: Orchestrates workflow and synthesizes final answers
 - **DocumentAgent**: Handles text retrieval (Hybrid, HighReasoning, Main)
 - **VisionAgent**: Handles visual analysis (Vision2Text, Deep Vision2Text)
+
+<img width="3493" height="2033" alt="Figure_6" src="https://github.com/user-attachments/assets/033a0c3b-2e48-4189-ac18-e537225a3bdb" />
 
 **Run:**
 ```bash
