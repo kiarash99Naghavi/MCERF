@@ -386,7 +386,7 @@ If you use this work, please cite:
 
 ---
 
-## Authors
+## Collaborators
 
 - **Kiarash Naghavi Khanghah** - University of Connecticut
 - **Hoang Anh Nguyen** - University of Connecticut
@@ -394,7 +394,7 @@ If you use this work, please cite:
 - **Amir Mohammad Vahedi** - University of Connecticut
 - **Daniele Grandi** - Autodesk Research
 - **Faez Ahmed** - Massachusetts Institute of Technology
-- **Hongyi Xu** (Corresponding Author) - University of Connecticut
+- **Hongyi Xu** - University of Connecticut
 
 ---
 
