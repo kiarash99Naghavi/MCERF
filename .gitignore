@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Environments
+.env
+
+
+# VS Code
+.vscode/
+
+# Project-specific
+.byaldi/
+combined_retrieval/
+results/
+scores/
+
+*.csv
+*.pdf
+# *.png
+# *.jpg
+*.jpeg
+*results.txt
+
+
+# Temporary files
+*.tmp
+

@@ -1,0 +1,35 @@
+# Core dependencies for DesignQA_CEaD project
+# Vision and RAG capabilities
+torch
+torchvision
+Pillow
+pdf2image
+
+# ColPali and multimodal models
+colpali-engine
+srsly
+
+# OpenAI integration
+openai
+
+# Data processing and analysis
+pandas
+numpy
+
+# NLP and text processing
+nltk
+rouge
+sentence-transformers
+
+# LangChain integration (optional)
+langchain==0.0.350
+langchain-openai
+
+# Information retrieval
+rank-bm25
+
+# Environment and configuration
+python-dotenv
+
+# Additional utilities
+pathlib2
