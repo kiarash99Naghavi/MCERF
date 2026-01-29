@@ -23,6 +23,9 @@ Unlike traditional text-only RAG systems, MCERF's ColPali-based retrieval captur
 
 ---
 
+<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/4a589107-9798-4cf3-a3b0-57b64011a860" />
+
+
 ## Results
 
 ![Comprehensive comparison of MLLM models across six MCERF variants](<img width="2834" height="1831" alt="Figure_7" src="https://github.com/user-attachments/assets/8e2d0888-8b1c-4c05-806d-9e75fb94ecf3" />
