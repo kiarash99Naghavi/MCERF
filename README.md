@@ -53,7 +53,9 @@ Comprehensive comparison of MLLM models across six MCERF variants
 ### GPT-5-MCERF-Main (Base Framework)
 
 The core architecture combining ColPali multimodal retrieval with GPT-5-mini reasoning. ColPali treats each PDF page as a visual input, breaking it into patches that maintain both textual and visual semantics. Uses MaxSim scoring for query-document similarity matching.
-<img width="1541" height="368" alt="Figure_1" src="https://github.com/user-attachments/assets/12840169-edec-43e9-b9ff-3994c2ae6f1e" />
+<p align="center">
+  <img width="154" height="37" alt="Figure_1" src="https://github.com/user-attachments/assets/12840169-edec-43e9-b9ff-3994c2ae6f1e" />
+</p>
 
 **Best for:** General multimodal question answering
 
@@ -68,7 +70,9 @@ python GPT-5-MCERF-Main.py
 
 Combines multimodal semantic search with keyword-based BM25 retrieval. A keyword extractor (GPT-5-Nano) identifies critical technical terms from the query, which are then used for precise lexical matching alongside ColPali's semantic retrieval.
 
-<img width="1839" height="818" alt="Figure_3" src="https://github.com/user-attachments/assets/4717be26-d187-420d-bdca-e6d50edce0b0" />
+<p align="center">
+  <img width="184" height="82" alt="Figure_3" src="https://github.com/user-attachments/assets/4717be26-d187-420d-bdca-e6d50edce0b0" />
+</p>
 Hybrid Retrieval Architecture
 
 **Best for:** Rule extraction tasks requiring specific term matching (achieves **0.95 F1** on Retrieval)
@@ -85,7 +89,9 @@ python GPT-5-MCERF-Hybrid.py --csv_path <path_to_csv> --pdf_path <path_to_pdf>
 Executes **5 independent retrieval-reasoning passes** per question. A blind adjudicator LLM (seeing only the generated answers, not the original question) consolidates results via consensus ranking. This reduces hallucination and improves robustness.
 
 
-<img width="1804" height="506" alt="Figure_4" src="https://github.com/user-attachments/assets/0a19d153-d26f-46f1-8331-478809e86e2a" />
+<p align="center">
+  <img width="180" height="51" alt="Figure_4" src="https://github.com/user-attachments/assets/0a19d153-d26f-46f1-8331-478809e86e2a" />
+</p>
 SelfConsistency Architecture
 
 **Best for:** Compilation tasks requiring comprehensive rule aggregation (achieves **0.56 F1**)
@@ -120,7 +126,9 @@ Introduces a Vision-to-Text preprocessing module that converts complex visual in
 3. **Image Describer**: GPT-5-mini generates comprehensive textual descriptions
 4. **High-Reasoning**: Processes textual descriptions with retrieved context
 
-<img width="1798" height="818" alt="Figure_5" src="https://github.com/user-attachments/assets/179d0106-616a-4ef4-ad40-6edd9ff24efe" />
+<p align="center">
+  <img width="180" height="82" alt="Figure_5" src="https://github.com/user-attachments/assets/179d0106-616a-4ef4-ad40-6edd9ff24efe" />
+</p>
 Vision2Text Architecture
 
 **Best for:** Dimension (0.82 ACC), Functional Performance (0.94 ACC) - tasks with tables, charts, and simulation results
