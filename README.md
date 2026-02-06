@@ -17,7 +17,9 @@ MCERF is a modular multimodal retrieval and reasoning framework designed for que
 The framework integrates two main components:
 
 1. **Multimodal Information Retriever Module (ColPali)**: Processes PDF pages as visual inputs, creating patch-level embeddings that preserve both textual semantics and visual structure
-<img width="400" height="235" alt="Figure_2" src="https://github.com/user-attachments/assets/f820e9ab-c4e0-409c-903b-3a607c5249e8" />
+<div style="text-align: center;">
+  <img width="450" height="184" alt="Figure_2" src="https://github.com/user-attachments/assets/f820e9ab-c4e0-409c-903b-3a607c5249e8" />
+</div>
 
 3. **Reasoning Module (GPT-5-mini)**: Generates answers grounded in retrieved multimodal context
 
