@@ -54,7 +54,7 @@ Comprehensive comparison of MLLM models across six MCERF variants
 
 The core architecture combining ColPali multimodal retrieval with GPT-5-mini reasoning. ColPali treats each PDF page as a visual input, breaking it into patches that maintain both textual and visual semantics. Uses MaxSim scoring for query-document similarity matching.
 <p align="center">
-  <img width="154" height="37" alt="Figure_1" src="https://github.com/user-attachments/assets/12840169-edec-43e9-b9ff-3994c2ae6f1e" />
+  <img width="450" height="184" alt="Figure_1" src="https://github.com/user-attachments/assets/12840169-edec-43e9-b9ff-3994c2ae6f1e" />
 </p>
 
 **Best for:** General multimodal question answering
@@ -71,7 +71,7 @@ python GPT-5-MCERF-Main.py
 Combines multimodal semantic search with keyword-based BM25 retrieval. A keyword extractor (GPT-5-Nano) identifies critical technical terms from the query, which are then used for precise lexical matching alongside ColPali's semantic retrieval.
 
 <p align="center">
-  <img width="184" height="82" alt="Figure_3" src="https://github.com/user-attachments/assets/4717be26-d187-420d-bdca-e6d50edce0b0" />
+  <img width="450" height="184" alt="Figure_3" src="https://github.com/user-attachments/assets/4717be26-d187-420d-bdca-e6d50edce0b0" />
 </p>
 Hybrid Retrieval Architecture
 
@@ -90,7 +90,7 @@ Executes **5 independent retrieval-reasoning passes** per question. A blind adju
 
 
 <p align="center">
-  <img width="180" height="51" alt="Figure_4" src="https://github.com/user-attachments/assets/0a19d153-d26f-46f1-8331-478809e86e2a" />
+  <img width="450" height="184" alt="Figure_4" src="https://github.com/user-attachments/assets/0a19d153-d26f-46f1-8331-478809e86e2a" />
 </p>
 SelfConsistency Architecture
 
@@ -127,7 +127,7 @@ Introduces a Vision-to-Text preprocessing module that converts complex visual in
 4. **High-Reasoning**: Processes textual descriptions with retrieved context
 
 <p align="center">
-  <img width="180" height="82" alt="Figure_5" src="https://github.com/user-attachments/assets/179d0106-616a-4ef4-ad40-6edd9ff24efe" />
+  <img width="450" height="184" alt="Figure_5" src="https://github.com/user-attachments/assets/179d0106-616a-4ef4-ad40-6edd9ff24efe" />
 </p>
 Vision2Text Architecture
 
