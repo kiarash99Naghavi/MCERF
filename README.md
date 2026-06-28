@@ -1,7 +1,7 @@
 # MCERF: Multimodal ColPali Enhanced Retrieval and Reasoning Framework
 
 **1st Place Winner - 2025 ASME International Student Hackathon - Autodesk challenge**
-
+Kiarash Naghavi, K., Nguyen, H. A., Doris, A. C., Vahedi, A. M., Grandi, D., Ahmed, F., Xu, H., “MCERF: Advancing Multimodal LLM Evaluation of Engineering Documentation with Enhanced Retrieval”, Journal of Mechanical Design, (2026)
 [Read the full news article](https://mechanical-aerospace-manufacturing.engineering.uconn.edu/2025/08/26/mam-graduate-students-take-top-spot-at-international-asme-student-hackathon/)
 
 ---
